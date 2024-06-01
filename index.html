@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <title>Document</title>
+</head>
+
+<body onload="loadTheme()">
+    <div class="wrapper">
+        <div class="header">
+            <header>
+                <nav>
+                    <div class="logo">
+                        <h1>IVIVU</h1>
+                        <div class="color">
+                            <div id="c1"></div>
+                            <div id="c2"></div>
+                            <div id="c3"></div>
+                        </div>
+                    </div>
+                    <div onclick="displayNav()" class="icon-nav">
+                        <i class="material-icons">menu</i>
+                    </div>
+
+                    <div class="mobile-nav">
+                        <span onclick="closeNav()" class="closeNav"><i class="material-icons">close</i></span>
+                        <div class="left-nav">
+                            <ul>
+                                <li>
+                                    <a href="index.html">Tour</a>
+                                </li>
+                                <li><a href="#">Khách sạn</a></li>
+                                <li><a href="vemaybay.html">Vé máy bay</a></li>
+                                <li><a href="chitietsanpham.html">Cẩm nang du lịch</a></li>
+                                <li><a href="#">Liên hệ</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="right-nav">
+                            <ul>
+                                <li><a href="login.html">Đăng nhập</a></li>
+                                <li><a href="login.html">Đăng ký</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="header-content">
+                    <div class="header-content__text">
+                        <h1 class="title">Du lịch khắp thế giới</h1>
+                        <p class="subtitle">Du lịch thế giới với trang web du lịch của chúng tôi - trải nghiệm, thông
+                            tin và lời khuyên cho những chuyến đi đáng nhớ.</p>
+                        <button class="slide-btn amt">Xem thêm</button>
+                    </div>
+                </div>
+                <div class="img-slider">
+                    <div class="slides">
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+
+                        <div class="slide first">
+                            <img src="https://ik.imagekit.io/tvlk/blog/2022/06/kinh-nghiem-du-lich-han-quoc-tu-tuc-1.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="https://visana.vn/wp-content/uploads/2019/06/Du-lich-Thuy-Sy-8.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="https://ik.imagekit.io/tvlk/blog/2021/11/dia-diem-du-lich-trung-quoc-1.jpg" alt="">
+                        </div>
+
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+        </div>
+        </header>
+    </div>
+    <main>
+        <hr style="background-color: orange; height: 3px;">
+
+        <section class="Popular-Location">
+            <h2 class="Popular-Location-tour">Tour Du Lịch Hè Giá Tốt</h2>
+            <span class="Popular-Location-tour-span">Chơi Hè Thả Ga, Không Lo Về Giá</span>
+            <section class="DisplayCards">
+                <article class="card">
+                    <article class="image">
+                        <h1>Bamboo/Vietjet +KS 3*</h1>
+                        <a href="chitietsanpham.html"><img src="https://cdn2.ivivu.com/2022/03/28/16/ivivu-merlion-park-singapore-360x225.gif" alt=""></a>
+                    </article>
+                    <article class="infor-location">
+                        <h3>Tour Singapore 3N2Đ: Khám Phá Quốc Đảo Sư Tử - Công Viên Fort Canning</h3>
+                        <span class="contry">
+                            9.0
+                        </span>
+                        <span class="contry1">Tuyệt vời </span>
+                        <span> | 4 đánh giá </span>
+                        <div class="infor-location">
+                            <ul>
+                                <li>Gardens by the Bay</li>
+                                <li>Đảo Ngọc Batam</li>e
+                                <li>Tàu Cao Tốc Đi Thẳng Ba Nước</li>
+                                <li>Không Cần Test Covid</li>
+                            </ul>
+                        </div>
+                        <div class="Detail">
+                            <span>8.990.000 
+                                <small class="textCurrency">VND</small>
+                            </span>
+                        </div>
+                    </article>
+                </article>
+                <article class="card">
+                    <article class="image">
+                        <h1>Vietjet + KS 3-4*</h1>
+                        <a href="chitietsanpham.html"><img src="https://cdn2.ivivu.com/2022/06/24/17/ivivu-chiang-mai-travel-360x225.gif" alt=""></a>
+                    </article>
+                    <article class="infor-location">
+                        <h3>Tour Chiang Mai - Chiang Rai 4N3Đ: Trải Nghiệm Miền Bắc Thái Lan</h3>
+                        <span class="contry">
+                            10.0
+                        </span>
+                        <span class="contry1">Tuyệt vời </span>
+                        <span> | 2 đánh giá </span>
+                        <div class="infor-location">
+                            <ul>
+                                <li>Chùa Trắng</li>
+                                <li>Chùa Xanh</li>
+                                <li>Làng Dân Tộc Cổ Dài</li>
+                                <li>Tam Giác Vàng</li>
+                            </ul>
+                        </div>
+                        <div class="Detail">
+                            <span>8.990.000
+                                <small class="textCurrency">VND</small>
+                            </span>
+                        </div>
+                    </article>
+                </article>
+                <article class="card">
+                    <article class="image">
+                        <h1>Xe Đời Mới + KS 3-4*</h1>
+                        <a href="chitietsanpham.html"><img src="https://cdn2.ivivu.com/2022/11/11/17/ivivu-kohrong-samloem-bia-360x225.gif" alt=""></a>
+                    </article>
+                    <article class="infor-location">
+                        <h3>Tour Campuchia 3N3Đ: Cao Nguyên Bokor - Sihanoukville - Đảo Thiên Đường Kohrong Saloem</h3>
+                        <span class="contry">
+                            9.0
+                        </span>
+                        <span class="contry1">Rất tốt </span>
+                        <span> | 18 đánh giá </span>
+                        <div class="infor-location">
+                            <ul>
+                                <li>Đảo Koh Rong Samloem</li>
+                                <li>Cao nguyên Bokor</li>
+                                <li>Biển ihanoukville</li>
+                            </ul>
+                        </div>
+                        <div class="Detail">
+                            <span>3.790.000
+                                <small class="textCurrency">VND</small>
+                            </span>
+                        </div>
+                    </article>
+                </article>
+                <article class="card">
+                    <article class="image">
+                        <h1>Bamboo/Vietjet +KS 3*</h1>
+                        <img src="https://cdn2.ivivu.com/2023/02/17/11/ivivu-cau-hon-1-360x225.gif" alt="">
+                    </article>
+                    <article class="infor-location">
+                        <h3>Tour Cao Cấp Phú Quốc 3N2Đ: Grand World - Địa Trung Hải</h3>
+                        <span class="contry">
+                            8.0
+                        </span>
+                        <span class="contry1">Rất tốt</span>
+                        <span> | 2 đánh giá </span>
+                        <div class="infor-location">
+                            <ul>
+                                <li>Grand World</li>
+                                <li>Cầu Hôn</li>
+                                <li>Đặc Sản Bún Quậy</li>
+                                <li>Không Cần Test Covid</li>
+                            </ul>
+                        </div>
+                        <div class="Detail">
+                            <span>5.090.000
+                                <small class="textCurrency">VND</small>
+                            </span>
+                        </div>
+                    </article>
+                </article>
+                <article class="card">
+                    <article class="image">
+                        <h1>KH T4 | VMB+Siêu Du Thuyền 5*</h1>
+                        <img src="https://cdn2.ivivu.com/2023/04/11/10/ivivu-dream-cruise-360x225.gif" alt="">
+                    </article>
+                    <article class="infor-location">
+                        <h3>Tour Singapore 3N2Đ: Khám Phá Quốc Đảo Sư Tử - Công Viên Fort Canning</h3>
+                        <span class="contry">
+                            9.0
+                        </span>
+                        <span class="contry1">Tuyệt vời </span>
+                        <span> | 4 đánh giá </span>
+                        <div class="infor-location">
+                            <ul>
+                                <li>Gardens by the Bay</li>
+                                <li>Đảo Ngọc Batam</li>
+                                <li>Tàu Cao Tốc Đi Thẳng Ba Nước</li>
+                                <li>Không Cần Test Covid</li>
+                            </ul>
+                        </div>
+                        <div class="Detail">
+                            <span>8.590.000
+                                <small class="textCurrency">VND</small>
+                            </span>
+                        </div>
+                    </article>
+                </article>
+                <article class="card">
+                    <article class="image">
+                        <h1>Bamboo/Vietjet + KS 3-4*</h1>
+                        <img src="https://cdn2.ivivu.com/2022/07/11/15/ivivu-thanh-co-muang-boran-360x225.gif" alt="">
+                    </article>
+                    <article class="infor-location">
+                        <h3>Tour Thái Lan 5N4Đ: Bangkok - Pattaya - Đảo San Hô - Nong Nooch</h3>
+                        <span class="contry">
+                            8.0
+                        </span>
+                        <span class="contry1">Rất tốt</span>
+                        <span> | 3 đánh giá </span>
+                        <div class="infor-location">
+                            <ul>
+                                <li>Công Viên Nong Nooch</li>
+                                <li>Xem Alcazar Show</li>
+                                <li>Trân Bảo Phật Sơn</li>
+                                <li>Buffet Quốc Tế 5 Sao</li>
+                            </ul>
+                        </div>
+                        <div class="Detail">
+                            <span>8.990.000
+                                <small class="textCurrency">VND</small>
+                            </span>
+                        </div>
+                    </article>
+                </article>
+            </section>
+        </section>
+        <div class="buttons">
+            <a href="#">Xem thêm tours</a>
+        </div>
+        <hr style="background-color: orange; height: 3px;">
+
+        <section class="Popular-Location">
+            <h2 class="Popular-Location-tour">Tour Nước Ngoài Cao Cấp</h2>
+            <span class="Popular-Location-tour-span">Trải Nghiệm Thế Giới, Khám Phá Bản Thân</span>
+            <section class="DisplayCards">
+                <article class="card">
+                    <article class="image">
+                        <h1>Vietjet + KS 3*</h1>
+                        <img src="https://cdn2.ivivu.com/2018/09/14/10/ivivu-toa-thap-doi-twin-towers--360x225.jpg"
+                            alt="">
+                    </article>
+                    <article class="infor-location">
+                        <h3>Tour Liên Tuyến Ba Nước 6N5Đ: Singapore - Indonesia - Malaysia</h3>
+                        <span class="contry">
+                            9.0
+                        </span>
+                        <span class="contry1">Tuyệt vời </span>
+                        <span> | 4 đánh giá </span>
+                        <div class="infor-location">
+                            <ul>
+                                <li>Gardens by the Bay</li>
+                                <li>Đảo Ngọc Batam</li>
+                                <li>Tàu Cao Tốc Đi Thẳng Ba Nước</li>
+                                <li>Không Cần Test Covid</li>
+                            </ul>
+                        </div>
+                        <div class="Detail">
+                            <span>12.690.000
+                                <small class="textCurrency">VND</small>
+                            </span>
+                        </div>
+                    </article>
+                </article>
+                <article class="card">
+                    <article class="image">
+                        <h1>Vietjet + KS 4*</h1>
+                        <img src="https://cdn2.ivivu.com/2019/01/11/17/chua-trang-wat-rong-khun-chiangrai-360x225.jpg"
+                            alt="">
+                    </article>
+                    <article class="infor-location">
+                        <h3>Tour Thái Lan 4N3Đ: Chiang Mai - Chiang Rai - Tam Giác Vàng</h3>
+                        <span class="contry">
+                            9.2
+                        </span>
+                        <span class="contry1">Tuyệt vời </span>
+                        <span> | 10 đánh giá </span>
+                        <div class="infor-location">
+                            <ul>
+                                <li>Khám Phá Chùa Trắng</li>
+                                <li>Tam Giác Vàng</li>
+                                <li>Truyền Thống Kantoke</li>
+                                <li>Làng Dân Tộc Cổ Dài</li>
+                            </ul>
+                        </div>
+                        <div class="Detail">
+                            <span>8.880.000
+                                <small class="textCurrency">VND</small>
+                            </span>
+                        </div>
+                    </article>
+                </article>
+                <article class="card">
+                    <article class="image">
+                        <h1>Emirates Airlines + KS 5*</h1>
+                        <img src="https://cdn2.ivivu.com/2022/03/18/09/ivivu-khach-san-burj-al-arab-360x225.gif" alt="">
+                    </article>
+                    <article class="infor-location">
+                        <h3>Tour Cao Cấp Dubai 4N4Đ: Dubai - Abu Dhabi - Miracle Garden</h3>
+                        <span class="contry">
+                            9.3
+                        </span>
+                        <span class="contry1">Rất tốt </span>
+                        <span> | 3 đánh giá </span>
+                        <div class="infor-location">
+                            <ul>
+                                <li>Đảo Cọ Nhân Tạo</li>
+                                <li>Tháp Buji Khalifa</li>
+                                <li>Khu Vườn Nhân Tạo</li>
+                                <li>Khách Sạn 7 Sao Burj Al Arab</li>
+
+                            </ul>
+                        </div>
+                        <div class="Detail">
+                            <span>29.990.000
+                                <small class="textCurrency">VND</small>
+                            </span>
+                        </div>
+                    </article>
+                </article>
+                <article class="card">
+                    <article class="image">
+                        <h1>Bamboo Airways + KS 4*</h1>
+                        <img src="https://cdn2.ivivu.com/2019/01/07/17/ivivu-tour-singapore-3n2d-universal-360x225.jpg"
+                            alt="">
+                    </article>
+                    <article class="infor-location">
+                        <h3>Tour Singapore 3N2Đ: Khám Phá Đảo Quốc Sư Tử - Gardens By The Bay - Chùa Răng Phật</h3>
+                        <span class="contry">
+                            9.8
+                        </span>
+                        <span class="contry1">Tuyệt vời</span>
+                        <span> | 9 đánh giá </span>
+                        <div class="infor-location">
+                            <ul>
+                                <li>Đảo Sentosa</li>
+                                <li>Gardens by the Bay</li>
+                                <li>Không Cần Test Covid</li>
+                                <li>Đài Quan Sát Siêu Cây</li>
+                            </ul>
+                        </div>
+                        <div class="Detail">
+                            <span>8.990.000
+                                <small class="textCurrency">VND</small>
+                            </span>
+                        </div>
+                    </article>
+                </article>
+                <article class="card">
+                    <article class="image">
+                        <h1>Vietnam Airlines + KS 4-5*</h1>
+                        <img src="https://cdn2.ivivu.com/2023/01/30/16/ivivu-lang-bich-hoa-360x225.gif" alt="">
+                    </article>
+                    <article class="infor-location">
+                        <h3>Du lịch Hàn Quốc: Seoul - Nami - Everland - Painting Show - NamSan</h3>
+                        <span class="contry">
+                            10.0
+                        </span>
+                        <span class="contry1">Tuyệt vời </span>
+                        <span> | 1 đánh giá </span>
+                        <div class="infor-location">
+                            <ul>
+                                <li>Đảo Nami</li>
+                                <li>Cảnh Phúc Cung</li>
+                                <li>Hero Show</li>
+                                <li>Không Cần Test Covid</li>
+                            </ul>
+                        </div>
+                        <div class="Detail">
+                            <span>18.990.000
+                                <small class="textCurrency">VND</small>
+                            </span>
+                        </div>
+                    </article>
+                </article>
+                <article class="card">
+                    <article class="image">
+                        <h1>Bay Vietjet | KS 4*</h1>
+                        <img src="https://cdn2.ivivu.com/2022/04/19/11/ivivu-den-tirta-empul-bali-1-360x225.gif" alt="">
+                    </article>
+                    <article class="infor-location">
+                        <h3>Tour Bali 4N3Đ: Tirta Gangga - Đền Ulun Danu - Tampak Siring - Cổng Trời</h3>
+                        <span class="contry">
+                            10.0
+                        </span>
+                        <span class="contry1">Tuyệt vời</span>
+                        <span> | 1 đánh giá </span>
+                        <div class="infor-location">
+                            <ul>
+                                <li>Bãi Biển Melastic Beach</li>
+                                <li>Cung Điện Tirta Gangga</li>
+                                <li>Đền Suối Thiêng Tampak Siring</li>
+                                <li>Làng Nghề Địa Phương</li>
+                            </ul>
+                        </div>
+                        <div class="Detail">
+                            <span>8.990.000
+                                <small class="textCurrency">VND</small>
+                            </span>
+                        </div>
+                    </article>
+                </article>
+            </section>
+        </section>
+        <div class="buttons">
+            <a href="#">Xem thêm tours</a>
+        </div>
+        <hr style="background-color: orange; height: 3px;">
+
+        <section class="Popular-Location">
+            <h2 class="Popular-Location-tour">Tour Du Lịch Trung Quốc - Hồng Kông - Đài Loan</h2>
+            <span class="Popular-Location-tour-span">Thiên Nhiên Cẩm Tú, Lịch Sử Ngàn Năm</span>
+            <section class="DisplayCards">
+                <article class="card">
+                    <article class="image">
+                        <h1>Cathay Pacific + KS 4*</h1>
+                        <img src="https://cdn2.ivivu.com/2022/12/06/16/ivivu-hong-kong-bia-360x225.gif" alt="">
+                    </article>
+                    <article class="infor-location">
+                        <h3>Tour Hồng Kông 4N3Đ: Khám Phá Hồng Kông - Kết Hợp Tự Do Mua Sắm</h3>
+                        <span class="contry">
+                            8.0
+                        </span>
+                        <span class="contry1">Rất tốt </span>
+                        <span> | 2 đánh giá </span>
+                        <div class="infor-location">
+                            <ul>
+                                <li>Visa Đơn Giản</li>
+                                <li>Đại Lộ Ngôi Sao</li>
+                                <li>Đỉnh Núi Thái Bình</li>
+                                <li>Chợ Đàn Bà</li>
+                            </ul>
+                        </div>
+                        <div class="Detail">
+                            <span>16.390.000
+                                <small class="textCurrency">VND</small>
+                            </span>
+                        </div>
+                    </article>
+                </article>
+                <article class="card">
+                    <article class="image">
+                        <h1>Vietjet | KS 5*</h1>
+                        <img src="https://cdn2.ivivu.com/2023/03/13/13/ivivu-phuong-hoang-co-tran-1-360x225.gif" alt="">
+                    </article>
+                    <article class="infor-location">
+                        <h3>Tour Trung Quốc 5N4Đ: Trương Gia Giới - Phượng Hoàng Cổ Trấn</h3>
+                        <span class="contry">
+                            9.0
+                        </span>
+                        <span class="contry1">Tuyệt vời </span>
+                        <span> | 8 đánh giá </span>
+                        <div class="infor-location">
+                            <ul>
+                                <li>Thành Cổ Phượng Hoàng</li>
+                                <li>Thiên Môn Sơn</li>
+                                <li>Con Đường Thủy Tinh</li>
+                                <li>Cầu Pha Lê</li>
+                            </ul>
+                        </div>
+                        <div class="Detail">
+                            <span>13.990.000
+                                <small class="textCurrency">VND</small>
+                            </span>
+                        </div>
+                    </article>
+                </article>
+                <article class="card">
+                    <article class="image">
+                        <h1>Sichuan Airlines | KS 5*</h1>
+                        <img src="https://cdn2.ivivu.com/2023/05/16/11/ivivu-yamdrok-bia-360x225.jpg" alt="">
+                    </article>
+                    <article class="infor-location">
+                        <h3>Tour Tây Tạng 8N7Đ: Hành Trình Tây Tạng Huyền Bí</h3>
+                        <span class="contry">
+                            9.2
+                        </span>
+                        <span class="contry1">Tuyệt vời </span>
+                        <span> | 2 đánh giá </span>
+                        <div class="infor-location">
+                            <ul>
+                                <li>Đại Chiêu Tự</li>
+                                <li>Phố Bát Giát</li>
+                                <li>Hồ Yamdrok</li>
+                                <li>Sông Băng Vĩnh Cửu Karola</li>
+                            </ul>
+                        </div>
+                        <div class="Detail">
+                            <span>67.990.000
+                                <small class="textCurrency">VND</small>
+                            </span>
+                        </div>
+                    </article>
+                </article>
+                <article class="card">
+                    <article class="image">
+                        <h1>China Eastern Airlines | KS 4*</h1>
+                        <img src="https://cdn2.ivivu.com/2023/04/24/13/ivivu-cong-vien-thac-1-360x225.jpg" alt="">
+                    </article>
+                    <article class="infor-location">
+                        <h3>Tour Trung Quốc 6N5Đ: HCM - Côn Minh - Sở Hùng - Lệ Giang - Shangrilat</h3>
+                        <span class="contry">
+                            10.0
+                        </span>
+                        <span class="contry1">Tuyệt vời</span>
+                        <span> | 5 đánh giá </span>
+                        <div class="infor-location">
+                            <ul>
+                                <li>Khe Hổ Nhảy</li>
+                                <li>Thành Cổ Lệ Giang</li>
+                                <li>Tam Tháp Đại Lý</li>
+                                <li>Núi Tuyết Ngọc Long</li>
+                            </ul>
+                        </div>
+                        <div class="Detail">
+                            <span>19.990.000
+                                <small class="textCurrency">VND</small>
+                            </span>
+                        </div>
+                    </article>
+                </article>
+                <article class="card">
+                    <article class="image">
+                        <h1>Vietjet | KS 3*</h1>
+                        <img src="https://cdn2.ivivu.com/2023/01/30/16/ivivu-lang-bich-hoa-360x225.gif" alt="">
+                    </article>
+                    <article class="infor-location">
+                        <h3>Tour Đài Loan 5N4Đ: HCM - Đào Viên - Công Viên Dã Liễu - Cao Hùng - Phật Quang Sơn</h3>
+                        <span class="contry">
+                            8.0
+                        </span>
+                        <span class="contry1">Rất tốt</span>
+                        <span> | 1 đánh giá </span>
+                        <div class="infor-location">
+                            <ul>
+                                <li>Công viên địa chất Dạ Liễu</li>
+                                <li>Phật Quang Sơn </li>
+                                <li>Làng Cổ Thập Phần</li>
+                                <li>Không Cần Test Covid</li>
+                            </ul>
+                        </div>
+                        <div class="Detail">
+                            <span>12.590.000
+                                <small class="textCurrency">VND</small>
+                            </span>
+                        </div>
+                    </article>
+                </article>
+                <article class="card">
+                    <article class="image">
+                        <h1>Air China | KS 4*</h1>
+                        <img src="https://cdn2.ivivu.com/2023/03/28/11/ivivu-cuu-trai-cau-bia-360x225.gif" alt="">
+                    </article>
+                    <article class="infor-location">
+                        <h3>Tour Trung Quốc 7N6Đ: Trùng Khánh - Thành Đô - Cửu Trại Câu</h3>
+                        <span class="contry">
+                            10.0
+                        </span>
+                        <span class="contry1">Tuyệt vời</span>
+                        <span> | 1 đánh giá </span>
+                        <div class="infor-location">
+                            <ul>
+                                <li>Tu Viện Văn Thù</li>
+                                <li>Đường Sắt Trên Cao</li>
+                                <li>Phố Cổ Hồng Nhai Động</li>
+                                <li>Thiên Đường Hạ Giới</li>
+                            </ul>
+                        </div>
+                        <div class="Detail">
+                            <span>18.990.000
+                                <small class="textCurrency">VND</small>
+                            </span>
+                        </div>
+                    </article>
+                </article>
+            </section>
+        </section>
+        <div class="buttons">
+            <a href="#">Xem thêm tours</a>
+        </div>
+        <hr style="background-color: orange; height: 3px;">
+
+        <section class="Popular-Location">
+            <h2 class="Popular-Location-tour">Tour Du Lịch Nhật Bản</h2>
+            <span class="Popular-Location-tour-span">Văn Hóa Độc Đáo, Cảnh Sắc Tuyệt Vời</span>
+            <section class="DisplayCards">
+                <article class="card">
+                    <article class="image">
+                        <h1>Vietjet | KS 3*</h1>
+                        <img src="https://cdn2.ivivu.com/2023/02/27/11/ivivu-cong-vien-hoa-hamamatsu-1-360x225.gif"
+                            alt="">
+                    </article>
+                    <article class="infor-location">
+                        <h3>Tour Nhật Bản 5N5Đ: Sắc Màu Cung Đường Vàng Osaka - Kyoto - Yamanashi - Tokyo</h3>
+                        <span class="contry">
+                            8.7
+                        </span>
+                        <span class="contry1">Rất tốt </span>
+                        <span> | 3 đánh giá </span>
+                        <div class="infor-location">
+                            <ul>
+                                <li>Chùa Thanh Thủy</li>
+                                <li>Núi Phú Sĩ</li>
+                                <li>Lâu Đài Osaka</li>
+                                <li>Rừng Tre Sagano</li>
+                            </ul>
+                        </div>
+                        <div class="Detail">
+                            <span>27.890.000
+                                <small class="textCurrency">VND</small>
+                            </span>
+                        </div>
+                    </article>
+                </article>
+                <article class="card">
+                    <article class="image">
+                        <h1>Japan Airlines | KS 4*</h1>
+                        <img src="https://cdn2.ivivu.com/2023/04/27/13/ivivu-blue-pond-2-360x225.jpg" alt="">
+                    </article>
+                    <article class="infor-location">
+                        <h3>Tour Nhật Bản 7N6Đ: Cánh Đồng Hoa Hokkaido - Sapporo - Asahikawa - Otaru - Tokyo</h3>
+                        <span class="contry">
+                            8.8
+                        </span>
+                        <span class="contry1">Rất tốt</span>
+                        <span> | 8 đánh giá </span>
+                        <div class="infor-location">
+                            <ul>
+                                <li>Cánh Đồng Hoa Hokkaido</li>
+                                <li>Ngắm Hoa Hoa Lavendar</li>
+                                <li>Hoàng Cung Nhật Bản</li>
+                                <li>Hòn Đảo Nhân Tạo Odaiba</li>
+                            </ul>
+                        </div>
+                        <div class="Detail">
+                            <span>46.880.000
+                                <small class="textCurrency">VND</small>
+                            </span>
+                        </div>
+                    </article>
+                </article>
+                <article class="card">
+                    <article class="image">
+                        <h1>Vietjet | KS 3*</h1>
+                        <img src="https://cdn2.ivivu.com/2017/05/15/15/ivivu-nui-phu-si-360x225.jpg" alt="">
+                    </article>
+                    <article class="infor-location">
+                        <h3>Tour Nhật Bản 4N4Đ: Tokyo - Phú Sỹ - Yamanashi</h3>
+                        <span class="contry">
+                            9.2
+                        </span>
+                        <span class="contry1">Tuyệt vời </span>
+                        <span> | 2 đánh giá </span>
+                        <div class="infor-location">
+                            <ul>
+                                <li>Núi Phú Sĩ</li>
+                                <li>Dạo Thuyền Hồ Ashi</li>
+                                <li>Chùa Cổ Asakusa</li>
+                                <li>Làng Văn Hóa Oshino Hakkai</li>
+                            </ul>
+                        </div>
+                        <div class="Detail">
+                            <span>22.990.000
+                                <small class="textCurrency">VND</small>
+                            </span>
+                        </div>
+                    </article>
+                </article>
+                <article class="card">
+                    <article class="image">
+                        <h1>Vietjet | KS 3*</h1>
+                        <img src="https://cdn2.ivivu.com/2022/09/07/18/ivivu-chua-vang-nhat-ban-kinkaku-ji-1-360x225.gif"
+                            alt="">
+                    </article>
+                    <article class="infor-location">
+                        <h3>Tour Nhật Bản 6N5Đ: Osaka - Kobe - Kyoto - Nagoya - Núi Phú Sĩ - Tokyo</h3>
+                        <span class="contry">
+                            10.0
+                        </span>
+                        <span class="contry1">Tuyệt vời</span>
+                        <span> | 5 đánh giá </span>
+                        <div class="infor-location">
+                            <ul>
+                                <li>Chùa Thanh Thủy</li>
+                                <li>Thành Osaka</li>
+                                <li>Tháp Cảng Kobe</li>
+                                <li>Núi Phú Sĩ/li>
+                            </ul>
+                        </div>
+                        <div class="Detail">
+                            <span>28.990.000
+                                <small class="textCurrency">VND</small>
+                            </span>
+                        </div>
+                    </article>
+                </article>
+                <article class="card">
+                    <article class="image">
+                        <h1>Vietjet | KS 3-4*</h1>
+                        <img src="https://cdn2.ivivu.com/2019/11/05/16/ivivu-nui-phu-si2-360x225.jpg" alt="">
+                    </article>
+                    <article class="infor-location">
+                        <h3>Tour Nhật Bản 4N4Đ: Tokyo - Yamanashi - Núi Phú Sĩ - Aeon Mall Narita</h3>
+                        <span class="contry">
+                            8.0
+                        </span>
+                        <span class="contry1">Rất tốt</span>
+                        <span> | 1 đánh giá </span>
+                        <div class="infor-location">
+                            <ul>
+                                <li>Núi Phú Sĩ</li>
+                                <li>Dạo Thuyền Hồ Ashi</li>
+                                <li>Chùa Cổ Asakusa</li>
+                                <li>Thung Lũng Ōwakudani</li>
+                            </ul>
+                        </div>
+                        <div class="Detail">
+                            <span>22.890.000
+                                <small class="textCurrency">VND</small>
+                            </span>
+                        </div>
+                    </article>
+                </article>
+                <article class="card">
+                    <article class="image">
+                        <h1>Vietjet | KS 3*</h1>
+                        <img src="https://cdn2.ivivu.com/2019/01/22/08/ivivu-tour-nhat-ban-nui-phu-si-3-360x225.jpg"
+                            alt="">
+                    </article>
+                    <article class="infor-location">
+                        <h3>Tour Nhật Bản 5N4Đ: Hành Trình Tokyo - Fuji - Narita</h3>
+                        <span class="contry">
+                            10.0
+                        </span>
+                        <span class="contry1">Tuyệt vời</span>
+                        <span> | 1 đánh giá </span>
+                        <div class="infor-location">
+                            <ul>
+                                <li>Chùa Cổ Asakusa</li>
+                                <li>Công Viên Oishi</li>
+                                <li>Núi Phú Sĩ</li>
+                                <li>Trải Nghiệm Tắm Onsen</li>
+                            </ul>
+                        </div>
+                        <div class="Detail">
+                            <span>21.990.000
+                                <small class="textCurrency">VND</small>
+                            </span>
+                        </div>
+                    </article>
+                </article>
+            </section>
+        </section>
+        <div class="buttons">
+            <a href="#">Xem thêm tours</a>
+        </div>
+        <hr style="background-color: orange; height: 3px;">
+
+        <section class="Popular-Location">
+            <h2 class="Popular-Location-tour">Tour Du Lịch Châu Âu - Mỹ - Úc</h2>
+            <span class="Popular-Location-tour-span">Trải Nghiệm Đẳng Cấp, Nâng Tầm Cuộc Sống</span>
+            <section class="DisplayCards">
+                <article class="card">
+                    <article class="image">
+                        <h1>Jetstar Airways | KS 3*</h1>
+                        <img src="https://cdn2.ivivu.com/2022/03/18/13/ivivu-nha-hat-con-so-360x225.gif" alt="">
+                    </article>
+                    <article class="infor-location">
+                        <h3>Tour Úc 5N4Đ: Khám phá Sydney - Free Day</h3>
+                        <span class="contry">
+                            8.0
+                        </span>
+                        <span class="contry1">Rất tốt </span>
+                        <span> | 2 đánh giá </span>
+                        <div class="infor-location">
+                            <ul>
+                                <li>Bay thẳng Jetstar</li>
+                                <li>Tàu Kéo Sennic World</li>
+                                <li>Sở Thú Taronga ở Sydney</li>
+                                <li>Wildlife Park</li>
+                            </ul>
+                        </div>
+                        <div class="Detail">
+                            <span>27.990.000
+                                <small class="textCurrency">VND</small>
+                            </span>
+                        </div>
+                    </article>
+                </article>
+                <article class="card">
+                    <article class="image">
+                        <h1>Turkish Airlines | KS 3-4*</h1>
+                        <img src="https://cdn2.ivivu.com/2022/03/08/16/ivivu-venice-y-360x225.gif" alt="">
+                    </article>
+                    <article class="infor-location">
+                        <h3>Tour Châu Âu 11N10Đ: Trải Nghiệm Pháp - Thụy Sĩ - Ý</h3>
+                        <span class="contry">
+                            9.3
+                        </span>
+                        <span class="contry1">Tuyệt vời </span>
+                        <span> | 3 đánh giá </span>
+                        <div class="infor-location">
+                            <ul>
+                                <li>Tháp Eiffel</li>
+                                <li>Tòa Thánh Vatican</li>
+                                <li>Thuyền Gondola</li>
+                                <li>Tháp Nghiêng Pisa</li>
+                            </ul>
+                        </div>
+                        <div class="Detail">
+                            <span>72.900.000
+                                <small class="textCurrency">VND</small>
+                            </span>
+                        </div>
+                    </article>
+                </article>
+                <article class="card">
+                    <article class="image">
+                        <h1>Turkish Airlines | KS 3-4*</h1>
+                        <img src="https://cdn2.ivivu.com/2022/09/22/11/ivivu-chau-au-mua-dong-360x225.gif" alt="">
+                    </article>
+                    <article class="infor-location">
+                        <h3>Tour Nam Âu 11N10Đ: Trải Nghiệm Pháp - Tây Ban Nha - Bồ Đào Nha</h3>
+                        <span class="contry">
+                            9.2
+                        </span>
+                        <span class="contry1">Tuyệt vời </span>
+                        <span> | 2 đánh giá </span>
+                        <div class="infor-location">
+                            <ul>
+                                <li>Cung Điện Lễ Hội</li>
+                                <li>Công Quốc Monaco</li>
+                                <li>Nhà Thờ Đức Bà</li>
+                                <li>Phố Cổ Nice</li>
+                            </ul>
+                        </div>
+                        <div class="Detail">
+                            <span>82.400.000
+                                <small class="textCurrency">VND</small>
+                            </span>
+                        </div>
+                    </article>
+                </article>
+                <article class="card">
+                    <article class="image">
+                        <h1>Eva Airways | KS 3-4*</h1>
+                        <img src="https://cdn2.ivivu.com/2022/08/15/15/ivivu-new-york-360x225.gif" alt="">
+                    </article>
+                    <article class="infor-location">
+                        <h3>Tour Bờ Đông Hoa Kỳ 7N6Đ: New York - Philadelphia - Washington DC</h3>
+                        <span class="contry">
+                            10.0
+                        </span>
+                        <span class="contry1">Tuyệt vời</span>
+                        <span> | 1 đánh giá </span>
+                        <div class="infor-location">
+                            <ul>
+                                <li>Tượng Nữ Thần Tự Do</li>
+                                <li>Cái Nôi Hoa Kỳ</li>
+                                <li>Thủ Đô Washington DC</li>
+                                <li>Bảo Tàng Hàng Không</li>
+                            </ul>
+                        </div>
+                        <div class="Detail">
+                            <span>69.790.000
+                                <small class="textCurrency">VND</small>
+                            </span>
+                        </div>
+                    </article>
+                </article>
+                <article class="card">
+                    <article class="image">
+                        <h1>Turkish Airlines | KS 4*</h1>
+                        <img src="https://cdn2.ivivu.com/2023/04/28/11/ivivu-bac-au-bia-360x225.jpg" alt="">
+                    </article>
+                    <article class="infor-location">
+                        <h3>Tour Bắc Âu 11N10Đ: Thụy Điển - Phần Lan - Na Uy - Đan Mạch</h3>
+                        <span class="contry">
+                            10.0
+                        </span>
+                        <span class="contry1">Tuyệt vời</span>
+                        <span> | 1 đánh giá </span>
+                        <div class="infor-location">
+                            <ul>
+                                <li>Tàu Điện Ngầm Ngắm Cảnh Xuyên Núi</li>
+                                <li>Du Thuyền 2 Đêm</li>
+                                <li>Lâu đài Akershus</li>
+                                <li>Đấu Trường Trượt Tuyết</li>
+                            </ul>
+                        </div>
+                        <div class="Detail">
+                            <span>85.990.000
+                                <small class="textCurrency">VND</small>
+                            </span>
+                        </div>
+                    </article>
+                </article>
+                <article class="card">
+                    <article class="image">
+                        <h1>Bamboo Airways | KS 3-4*</h1>
+                        <img src="https://cdn2.ivivu.com/2022/07/06/18/ivivu-thuy-sy-360x225.gif" alt="">
+                    </article>
+                    <article class="infor-location">
+                        <h3>Tour Châu Âu 9N8Đ: Đức - Hà Lan - Bỉ - Pháp - Thụy Sỹ</h3>
+                        <span class="contry">
+                            9.0
+                        </span>
+                        <span class="contry1">Tuyệt vời</span>
+                        <span> | 1 đánh giá </span>
+                        <div class="infor-location">
+                            <ul>
+                                <li>Làng Zaanse Schans</li>
+                                <li>Tháp Eiffel</li>
+                                <li>Khải Hoàn Môn</li>
+                                <li>Làng Cổ Tích</li>
+                            </ul>
+                        </div>
+                        <div class="Detail">
+                            <span>54.900.000
+                                <small class="textCurrency">VND</small>
+                            </span>
+                        </div>
+                    </article>
+                </article>
+            </section>
+        </section>
+        <div class="buttons">
+            <a href="#">Xem thêm tours</a>
+        </div>
+        <hr style="background-color: orange; height: 3px;">
+
+        <section class="Popular-Location">
+            <h2 class="Popular-Location-tour">Tour Siêu Du Thuyền 5 Sao</h2>
+            <span class="Popular-Location-tour-span">Trải Nghiệm Thời Thượng, Nâng Tầm Cuộc Sống</span>
+            <section class="DisplayCards">
+                <article class="card">
+                    <article class="image">
+                        <h1>Villa 5* Trên Biển</h1>
+                        <img src="https://cdn2.ivivu.com/2023/04/11/10/ivivu-dream-cruise-360x225.gif" alt="">
+                    </article>
+                    <article class="infor-location">
+                        <h3>Trải Nghiệm Villa 5* Trên Biển 3N2Đ Singapore-Malaysia Cùng Siêu Du Thuyền Genting Dream
+                        </h3>
+                        <span class="contry">
+                            8.0
+                        </span>
+                        <span class="contry1">Rất tốt </span>
+                        <span> | 2 đánh giá </span>
+                        <div class="infor-location">
+                            <ul>
+                                <li>Villa rộng 224 m2</li>
+                                <li>Quản gia Butler 24h</li>
+                                <li>Phục vụ ăn uống tại phòng</li>
+                                <li>VIP check-in và Lounge</li>
+                            </ul>
+                        </div>
+                        <div class="Detail">
+                            <span>39.690.000
+                                <small class="textCurrency">VND</small>
+                            </span>
+                        </div>
+                    </article>
+                </article>
+                <article class="card">
+                    <article class="image">
+                        <h1>KH Thứ 2 Hàng Tuần</h1>
+                        <img src="https://cdn2.ivivu.com/2022/05/04/10/ivivu-spectrum-of-the-seas-1-360x225.gif" alt="">
+                    </article>
+                    <article class="infor-location">
+                        <h3>Trải Nghiệm Du Lịch Singapore - Malaysia 4N3Đ Cùng Siêu Du Thuyền Spectrum Of The Seas</h3>
+                        <span class="contry">
+                            9.9
+                        </span>
+                        <span class="contry1">Tuyệt vời </span>
+                        <span> | 63 đánh giá </span>
+                        <div class="infor-location">
+                            <ul>
+                                <li>17 Nhà Hàng</li>
+                                <li>07 Bars và Lounge</li>
+                                <li>55 Hoạt Động Vui Chơi Giải Trí</li>
+                                <li>Hàng Hiệu Miễn Thuế</li>
+                            </ul>
+                        </div>
+                        <div class="Detail">
+                            <span>13.990.000
+                                <small class="textCurrency">VND</small>
+                            </span>
+                        </div>
+                    </article>
+                </article>
+                <article class="card">
+                    <article class="image">
+                        <h1>Trải Nghiệm Nam Cực</h1>
+                        <img src="https://cdn2.ivivu.com/2022/05/18/14/ivivu-emblematic-antartica-cruise-8--360x225.gif"
+                            alt="">
+                    </article>
+                    <article class="infor-location">
+                        <h3>Trải Nghiệm Du Lịch Nam Cực 15N14Đ Cùng Du Thuyền Le Austral 5*</h3>
+                        <span class="contry">
+                            9.2
+                        </span>
+                        <span class="contry1">Tuyệt vời </span>
+                        <span> | 2 đánh giá </span>
+                        <div class="infor-location">
+                            <ul>
+                                <li>Eo biển Drake</li>
+                                <li>Chim Cánh Cụt Nam Cực</li>
+                                <li>Nam Cực Hoang Dã</li>
+                                <li>Phố Cổ Nice</li>
+                            </ul>
+                        </div>
+                        <div class="Detail">
+                            <span>368.999.000
+                                <small class="textCurrency">VND</small>
+                            </span>
+                        </div>
+                    </article>
+                </article>
+                <article class="card">
+                    <article class="image">
+                        <h1>KH Thứ 5 Hàng Tuần</h1>
+                        <img src="https://cdn2.ivivu.com/2022/04/29/11/ivivu-spectrum-of-the-seas-overview-bia-360x225.gif"
+                            alt="">
+                    </article>
+                    <article class="infor-location">
+                        <h3>Trải Nghiệm Du Lịch Singapore - Malaysia 5N4Đ Cùng Siêu Du Thuyền Spectrum Of The Seas</h3>
+                        <span class="contry">
+                            9.8
+                        </span>
+                        <span class="contry1">Tuyệt vời</span>
+                        <span> | 11 đánh giá </span>
+                        <div class="infor-location">
+                            <ul>
+                                <li>17 Nhà Hàng</li>
+                                <li>07 Bars và Lounge</li>
+                                <li>55 Hoạt Động Vui Chơi Giải Trí</li>
+                                <li>Hàng Hiệu Miễn Thuế</li>
+                            </ul>
+                        </div>
+                        <div class="Detail">
+                            <span>15.990.000
+                                <small class="textCurrency">VND</small>
+                            </span>
+                        </div>
+                    </article>
+                </article>
+                <article class="card">
+                    <article class="image">
+                        <h1>TKH Chủ Nhật Từ Singapore</h1>
+                        <img src="https://cdn2.ivivu.com/2023/04/11/10/ivivu-dream-cruise-360x225.gif" alt="">
+                    </article>
+                    <article class="infor-location">
+                        <h3>Trải Nghiệm Du Lịch Singapore - Phuket 4N3Đ Cùng Siêu Du Thuyền Genting Dream 5*</h3>
+                        <span class="contry">
+                            10.0
+                        </span>
+                        <span class="contry1">Tuyệt vời</span>
+                        <span> | 1 đánh giá </span>
+                        <div class="infor-location">
+                            <ul>
+                                <li>Ẩm Thực Đẳng Cấp</li>
+                                <li>Zipline trên đại dương</li>
+                                <li>Zouk Zouk Beach Club</li>
+                                <li>Bar City</li>
+                            </ul>
+                        </div>
+                        <div class="Detail">
+                            <span>12.390.000
+                                <small class="textCurrency">VND</small>
+                            </span>
+                        </div>
+                    </article>
+                </article>
+                <article class="card">
+                    <article class="image">
+                        <h1>KH 21/06, 31/08, 29/09, 23/10</h1>
+                        <img src="https://cdn2.ivivu.com/2023/03/06/18/ivivu-banner-princess-360x225.gif" alt="">
+                    </article>
+                    <article class="infor-location">
+                        <h3>Trải Nghiệm Du Lịch Nhật Bản - Đài Loan 9N8Đ Cùng Siêu Du Thuyền Diamond Princess</h3>
+                        <span class="contry">
+                            9.0
+                        </span>
+                        <span class="contry1">Tuyệt vời</span>
+                        <span> | 1 đánh giá </span>
+                        <div class="infor-location">
+                            <ul>
+                                <li>Casino kiểu Las Vegas</li>
+                                <li>Movies under Stars</li>
+                                <li>Hồ Bơi & Tắm Nóng</li>
+                                <li>Tắm kiểu Nhật Izumi Japanese Bath</li>
+                            </ul>
+                        </div>
+                        <div class="Detail">
+                            <span>47.990.000
+                                <small class="textCurrency">VND</small>
+                            </span>
+                        </div>
+                    </article>
+                </article>
+            </section>
+        </section>
+        <div class="buttons">
+            <a href="#">Xem thêm tours</a>
+        </div>
+        <hr style="background-color: orange; height: 3px;">
+
+        <section class="Popular-Location">
+            <h2 class="Popular-Location-tour">Tour Du Lịch Tây Nguyên</h2>
+            <span class="Popular-Location-tour-span">Về Với Đại Ngàn, Ngập Tràn Niềm Vui</span>
+            <section class="DisplayCards">
+                <article class="card">
+                    <article class="image">
+                        <h1>Xe Ghế Ngồi + KS 3*</h1>
+                        <img src="https://cdn2.ivivu.com/2020/07/24/11/ivivu-thac-draysap-bia-360x225.gif" alt="">
+                    </article>
+                    <article class="infor-location">
+                        <h3>Tour Tây Nguyên 3N2Đ: Khám Phá Tà Đùng - Buôn Mê Thuột - Thác Draysap
+                        </h3>
+                        <span class="contry">
+                            4.0
+                        </span>
+                        <span class="contry1">Không tốt </span>
+                        <span> | 1 đánh giá </span>
+                        <div class="infor-location">
+                            <ul>
+                                <li>KDL Hồ Tà Đùng</li>
+                                <li>Khám Phá Xứ Sở Tây Nguyên</li>
+                                <li>Ẩm Thực Tây Nguyên</li>
+                                <li>Bảo Tàng Thế Giới Cà Phê</li>
+                            </ul>
+                        </div>
+                        <div class="Detail">
+                            <span>2.786.000
+                                <small class="textCurrency">VND</small>
+                            </span>
+                        </div>
+                    </article>
+                </article>
+                <article class="card">
+                    <article class="image">
+                        <h1>KH Thứ 4 | Xe Ghế Ngồi + KS 2* </h1>
+                        <img src="https://cdn2.ivivu.com/2023/01/30/13/ivivu-bao-ton-am-nhac-dan-gian-tay-nguyen-360x225.gif"
+                            alt="">
+                    </article>
+                    <article class="infor-location">
+                        <h3>Tour Xuyên Tây Nguyên 4N4Đ: Măng Đen - Cửa Khẩu Bờ Y - Ngã 3 Đông Dương - Tà Đùng</h3>
+                        <span class="contry">
+                            9.7
+                        </span>
+                        <span class="contry1">Tuyệt vời </span>
+                        <span> | 43 đánh giá </span>
+                        <div class="infor-location">
+                            <ul>
+                                <li>Nhà Thờ Gỗ Kon Tum</li>
+                                <li>Đà Lạt Thứ 2</li>
+                                <li>KDL Thác Pa Sĩ</li>
+                                <li>Nhà Rông Kon klor</li>
+                            </ul>
+                        </div>
+                        <div class="Detail">
+                            <span>3.390.000
+                                <small class="textCurrency">VND</small>
+                            </span>
+                        </div>
+                    </article>
+                </article>
+                <article class="card">
+                    <article class="image">
+                        <h1>Xe Ghế Ngồi + KS 5*</h1>
+                        <img src="https://cdn2.ivivu.com/2020/02/24/15/ivivu-ho-ta-dung-tn-360x225.gif" alt="">
+                    </article>
+                    <article class="infor-location">
+                        <h3>Tour Cao Cấp Tây Nguyên 3N3Đ: Tà Đùng - Buôn Mê Thuột - Thác Dray Nu</h3>
+                        <span class="contry">
+                            9.2
+                        </span>
+                        <span class="contry1">Tuyệt vời </span>
+                        <span> | 2 đánh giá </span>
+                        <div class="infor-location">
+                            <ul>
+                                <li>KDL Hồ Tà Đùng</li>
+                                <li>Khám Phá Xứ Sở Tây Nguyên</li>
+                                <li>Cưỡi Voi</li>
+                                <li>Không cần test covid</li>
+                            </ul>
+                        </div>
+                        <div class="Detail">
+                            <span>2.590.000
+                                <small class="textCurrency">VND</small>
+                            </span>
+                        </div>
+                    </article>
+                </article>
+                <article class="card">
+                    <article class="image">
+                        <h1>Khách Sạn 3*</h1>
+                        <img src="https://cdn2.ivivu.com/2022/06/02/14/ivivu-ho-ta-dung-360x225.jpg" alt="">
+                    </article>
+                    <article class="infor-location">
+                        <h3>Tour Tây Nguyên 3N3Đ: Măng Đen - Kon Tum - Gia Lai - Buôn Mê - Tà Đùng</h3>
+                        <span class="contry">
+                            8.87
+                        </span>
+                        <span class="contry1">Rất tốt</span>
+                        <span> | 9 đánh giá </span>
+                        <div class="infor-location">
+                            <ul>
+                                <li>KDL Tà Đùng</li>
+                                <li>KDL Thác Pa Sĩ</li>
+                                <li>Buôn Làng Ako Dhông</li>
+                                <li>Đức Mẹ Măng Đen</li>
+                            </ul>
+                        </div>
+                        <div class="Detail">
+                            <span>2.740.000
+                                <small class="textCurrency">VND</small>
+                            </span>
+                        </div>
+                    </article>
+                </article>
+                <article class="card">
+                    <article class="image">
+                        <h1>TKH Chủ Nhật Từ Singapore</h1>
+                        <img src="https://cdn2.ivivu.com/2022/10/03/17/ivivu-thac-pa-sy-360x225.gif" alt="">
+                    </article>
+                    <article class="infor-location">
+                        <h3>Tour Tây Nguyên 3N2Đ: Măng Đen - Ngã 3 Đông Dương - Khẩu Bờ Y - Gia Lai</h3>
+                        <span class="contry">
+                            9.5
+                        </span>
+                        <span class="contry1">Tuyệt vời</span>
+                        <span> | 4 đánh giá </span>
+                        <div class="infor-location">
+                            <ul>
+                                <li>KDL Thác Pa Sĩ</li>
+                                <li>Cửa Khẩu Bờ Y</li>
+                                <li>Ngã 3 Đông Dương</li>
+                                <li>Nhà Rông Kon Klor</li>
+                            </ul>
+                        </div>
+                        <div class="Detail">
+                            <span>4.890.000
+                                <small class="textCurrency">VND</small>
+                            </span>
+                        </div>
+                    </article>
+                </article>
+                <article class="card">
+                    <article class="image">
+                        <h1>Xe Giường Nằm + KS 3*</h1>
+                        <img src="https://cdn2.ivivu.com/2022/06/20/11/ivivu-doi-che-cau-dat-360x225.gif" alt="">
+                    </article>
+                    <article class="infor-location">
+                        <h3>Tour Đà Lạt 3N3Đ: Cao Nguyên Hoa - Làng Châu Âu - Thác Datanla - Đồi Chè Cầu Đất</h3>
+                        <span class="contry">
+                            7.0
+                        </span>
+                        <span class="contry1">Khá tốt</span>
+                        <span> | 2 đánh giá </span>
+                        <div class="infor-location">
+                            <ul>
+                                <li>KDL Chuồn Chuồn</li>
+                                <li>Làng Châu Âu</li>
+                                <li>Các Điểm Du Lịch Mới</li>
+                                <li>Không cần test covid</li>
+                            </ul>
+                        </div>
+                        <div class="Detail">
+                            <span>2.390.000
+                                <small class="textCurrency">VND</small>
+                            </span>
+                        </div>
+                    </article>
+                </article>
+            </section>
+        </section>
+        <div class="buttons">
+            <a href="#">Xem thêm tours</a>
+    </div>
+    <hr style="background-color: orange; height: 3px;">
+    <h2 class="Popular-Location-tour">Các điểm du lịch phổ biến</h2>
+    <span class="Popular-Location-tour-span">Bao La Thế Giới Bốn Bể Là Nhà</span>
+    <section class="grid-container">
+        <div class="item1">
+            <img src="https://cdn2.ivivu.com/2015/04/27/11/dai-loan-phat-quang-son-1-360x480.jpg" alt="">
+            <span class="tourCount">Đài loan</span>
+        </div>
+        <div class="item2">
+            <img src="https://cdn2.ivivu.com/2022/04/13/15/ivivu-dubai8-360x225.gif" alt="">
+            <span class="tourCount">Dubai</span>
+        </div>
+        <div class="item3">
+            <img src="https://cdn2.ivivu.com/2019/11/05/16/ivivu-nui-phu-si2-360x225.jpg" alt="">
+            <span class="tourCount">Nhật bản</span>
+        </div>
+        <div class="item4">
+            <img src="https://cdn2.ivivu.com/2022/03/08/15/ivivu-du-lich-phap-eiffel-360x225.gif" alt="">   
+            <span class="tourCount">châu âu</span>
+        </div>
+        <div class="item5">
+            <img src="https://cdn2.ivivu.com/2020/06/24/13/ivivu-thac-ban-gioc-bia-360x225.gif" alt="">
+            <span class="tourCount">Đông bắc</span>
+        </div>
+    </section>
+    </main>
+    <!-- open footer  -->
+    <footer>
+        <section>
+            <div class="contact" style="margin-right: 10%;">
+                <h2>LIÊN HỆ</h2>
+                <hr style="width: 100px;">
+                <p>Địa chỉ: Phường Tân Chánh Hiệp, Q12, TP.HCM</p>
+                <p>Email: dulichviet@gmail.com</p>
+                <p>Điện thoại: 0357427305</p>
+                <p> Mã số thế: 038975467</p>
+                <p>GDPK lữ hành quốc tế 79-400/2015/TCDL</p>
+            </div>
+
+            <div class="map" style="margin-right: 15%;">
+                <h2>BẢN ĐỒ</h2>
+                <!-- <hr style="width: 100px; margin-bottom: 5px;"> -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4436614899205!2d106.62525347514674!3d10.85382108929969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752bee0b0ef9e5%3A0x5b4da59e47aa97a8!2zQ8O0bmcgVmnDqm4gUGjhuqduIE3hu4FtIFF1YW5nIFRydW5n!5e0!3m2!1svi!2s!4v1685343896402!5m2!1svi!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="social">
+                <h2>KẾT NỐI</h2>
+                <hr style="width: 100px;">
+                <ul style="padding-top: 10px;">
+                    <li><a href="#"> <i class="bi bi-facebook" style="padding: 10px; font-size: 30px;"></i></a></li>
+                    <li><a href="#"> <i class="bi bi-twitter" style="padding: 10px; font-size: 30px;"></i></a></li>
+                    <li><a href="#"> <i class="bi bi-instagram" style="padding: 10px; font-size: 30px;"></i></a></li>
+                    <p>Đăng ký nhận tin khuyến mãi</p>
+                    <input type="text" placeholder="Nhập email nhận khuyến mãi" style="width: 70%; padding: 5px;">
+                    <button
+                        style="margin-left: 5px; padding: 5px; border-radius: 8px; background-color: brown; color: white; cursor: pointer;;">ĐĂNG
+                        KÝ</button>
+                </ul>
+
+            </div>
+        </section>
+    </footer>
+
+    <!-- end footer -->
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
